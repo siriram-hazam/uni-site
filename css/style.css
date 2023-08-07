@@ -1,0 +1,950 @@
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300&display=swap');
+font-family: 'IBM Plex Sans Thai', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niramit:wght@500&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Niramit', sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body>#content>iframe {
+    width: 1070px;
+    height: 800px;
+    max-width: 100%;
+
+    padding: 0 20px 0 20px;
+
+    border: #fff 1px solid;
+}
+
+
+#header {
+    background-color: #50a55b;
+}
+
+#header-p {
+    color: white;
+    padding: 0 10px;
+    float: right;
+    font-size: 16px;
+}
+
+#header-logo {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    height: 150px;
+}
+
+
+#header-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Taviraj', serif;
+    font-size: 27px;
+    margin-right: 30px;
+}
+
+#logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+nav {
+    background-color: #5c5c5c;
+    /* position: relative; */
+    margin-top: -16px;
+    /* width: 100%; */
+    z-index: 100;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-menu li {
+    margin-right: 5px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.nav-menu li a:hover {
+    color: #808080;
+    transition: 0.4s;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #818181;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 2px;
+    width: 200px;
+    z-index: 100;
+    opacity: 0.9;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu>li a {
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom: 5px solid #ddd;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-menu li a:hover {
+    color: black;
+    transition: 0.3s;
+
+}
+
+#body-head {
+    /* position: relative;
+    left: 25%; */
+    /* border: #000000 1px solid; */
+    margin-top: -16px;
+    padding: 0 15% 2% 15%;
+}
+
+#body-p-st {
+    padding: 0 12% 0 12%;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: #c8d8df 1px 1px 1px;
+}
+
+#p-head {
+    font-size: 17px;
+    border-bottom: #000000 1.5px dashed;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 2.5em;
+}
+
+#body-head>#content>a>img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body>#body-head>#p-body {
+    font-size: 14px;
+    padding-left: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+body>#body-head>#p-body>a {
+    color: #000000;
+}
+
+body>#body-head>#p-body a:hover {
+    color: #4bb2db;
+    text-decoration: underline;
+}
+
+body>#body-head>#p-body>p {
+    margin: 0;
+    padding: 0;
+}
+
+
+#content {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-nocenter {
+    background-color: #ffffff;
+    margin-left: 20px;
+    /* align-items: center; */
+    /* justify-content: left; */
+    display: inline-block;
+    width: 100%;
+}
+
+#content-employee {
+    font-size: 13px;
+    font-weight: lighter;
+    margin-left: 15em
+}
+
+#content-employee-tab {
+    margin-left: 17em;
+    font-size: 13px;
+}
+
+#content-info-head {
+    border-bottom: 1px dashed black; color: rgb(222, 161, 47); 
+    margin-left: 11em; 
+    font-weight: bold;
+}
+
+#content-info-inhead-tab {
+    border-bottom: 1px dashed black; 
+    color: rgb(112, 112, 246); 
+    margin-left: 15em;
+    font-size: 14px;
+}
+
+#content-info > img{
+    width: 150px;
+    float: left;
+    margin: 5px 15px;
+}
+
+footer {
+    background-color: #5c5c5c;
+    color: #fff;
+    padding: 5px;
+    text-shadow: #000000 1px 1px 1px;
+    /* margin-top: -16px; */
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Niramit', sans-serif;
+}
+
+.footer-column {
+    padding: 10px 20px 0;
+}
+
+#footer-unibranch {
+    font-size: 18px;
+}
+
+#footer-uni {
+    font-size: 16px;
+}
+
+#footer-uni>a {
+    color: lightgray;
+}
+
+#footer-uni>a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer-font-color-sp {
+    color: #b1b1b1;
+}
+
+footer>div>#footer-map {
+    width: 500px;
+    height: 300px;
+}
+
+#footer-copyright {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Niramit', sans-serif;
+    text-shadow: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* For Type HUB Portrait View or Ipad */
+@media (min-width: 1024px) and (max-width: 1300px) {
+
+    #header-p {
+        font-size: 12px;
+    }
+
+    #header-logo>a {
+        font-size: 1.8vmax;
+    }
+
+    #logo {
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
+
+    .dropdown-menu {
+        width: 110px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        padding: 0 10px 0;
+    }
+
+    #footer-unibranch {
+        font-size: 14px;
+    }
+
+    #footer-uni {
+        font-size: 12px;
+    }
+
+    #footer-font-color-sp {
+        font-size: 12px;
+    }
+
+    #footer-copyright {
+        font-size: 9px;
+    }
+
+    body>#body-head>#p-body {
+        font-size: 12px;
+    }
+
+    
+    #content-nocenter {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-employee {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-info{
+        margin: 0;
+        padding: 0;
+        font: 12px;
+    }
+    
+    #content-info-head {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+    }
+    
+    #content-info-inhead-tab {
+        margin-left: 20px;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    #content-employee-tab {
+        margin-left: 30px;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    #content-info > img{
+        float: none;
+    }
+}
+
+/* For New Type Phone Portrait View */
+@media (min-width: 360px) and (max-width: 920px) and (orientation: portrait) {
+
+    #header-p {
+        font-size: 12px;
+    }
+
+    #header-logo>a {
+        font-size: 1.8vmax;
+    }
+
+    #logo {
+        max-width: 70%;
+        max-height: 50%;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
+
+    .dropdown-menu {
+        width: 110px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        padding: 0 10px 0;
+    }
+
+    #footer-unibranch {
+        font-size: 14px;
+    }
+
+    #footer-uni {
+        font-size: 12px;
+    }
+
+    #footer-font-color-sp {
+        font-size: 12px;
+    }
+
+    #footer-copyright {
+        font-size: 9px;
+    }
+
+    body>#body-head>#p-body {
+        font-size: 12px;
+    }
+    
+    #content-nocenter {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-employee {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-info{
+        margin: 0;
+        padding: 0;
+        font: 12px;
+    }
+    
+    #content-info-head {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+    }
+    
+    #content-info-inhead-tab {
+        margin-left: 20px;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    #content-employee-tab {
+        margin-left: 30px;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    #content-info > img{
+        float: none;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 920px) and (orientation: landscape) {
+
+    #header-p {
+        font-size: 12px;
+    }
+
+    #header-logo>a {
+        font-size: 1.8vmax;
+    }
+
+    #logo {
+        max-width: 70%;
+        max-height: 50%;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
+
+    .dropdown-menu {
+        width: 110px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        padding: 0 10px 0;
+    }
+
+    #footer-unibranch {
+        font-size: 14px;
+    }
+
+    #footer-uni {
+        font-size: 12px;
+    }
+
+    #footer-font-color-sp {
+        font-size: 12px;
+    }
+
+    #footer-copyright {
+        font-size: 9px;
+    }
+
+    body>#body-head>#p-body {
+        font-size: 12px;
+    }
+
+    #content-nocenter {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-employee {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-info{
+        margin: 0;
+        padding: 0;
+        font: 12px;
+    }
+    
+    #content-info-head {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+    }
+    
+    #content-info-inhead-tab {
+        margin-left: 20px;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    #content-employee-tab {
+        margin-left: 30px;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    #content-info > img{
+        float: none;
+    }
+}
+
+/* For iPhone 6 and 6 plus Portrait View */
+@media (max-width: 375px) and (max-height: 667px) and (orientation: portrait) {
+
+    #header-p {
+        font-size: 12px;
+    }
+
+    #header-logo>a {
+        font-size: 2.0vmax;
+    }
+
+    #logo {
+        max-width: 70%;
+        max-height: 50%;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
+
+    .dropdown-menu {
+        width: 110px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        padding: 0 10px 0;
+    }
+
+    #footer-unibranch {
+        font-size: 14px;
+    }
+
+    #footer-uni {
+        font-size: 12px;
+    }
+
+    #footer-font-color-sp {
+        font-size: 12px;
+    }
+
+    #footer-copyright {
+        font-size: 9px;
+    }
+
+    #body-p-st {
+        font-size: 14px;
+    }
+
+    #p-head {
+        font-size: 14px;
+    }
+
+    body>#body-head>#p-body {
+        font-size: 12px;
+    }
+
+    #content-nocenter {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-employee {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-info{
+        margin: 0;
+        padding: 0;
+        font: 12px;
+    }
+    
+    #content-info-head {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+    }
+    
+    #content-info-inhead-tab {
+        margin-left: 20px;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    #content-employee-tab {
+        margin-left: 30px;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    #content-info > img{
+        float: none;
+    }
+   
+}
+
+/* For iPhone 6 and 6 plus Landscape View */
+@media only screen and (max-width: 667px) and (max-height: 375px) and (orientation: landscape) {
+
+    #header-p {
+        font-size: 12px;
+    }
+
+    #header-logo>a {
+        font-size: 2.0vmax;
+    }
+
+    #logo {
+        max-width: 70%;
+        max-height: 50%;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
+
+    .dropdown-menu {
+        width: 110px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        padding: 0 10px 0;
+    }
+
+    footer>div>#footer-map {
+        width: 300px;
+        height: 350px;
+    }
+
+    #footer-unibranch {
+        font-size: 14px;
+    }
+
+    #footer-uni {
+        font-size: 12px;
+    }
+
+    #footer-font-color-sp {
+        font-size: 12px;
+    }
+
+    #footer-copyright {
+        font-size: 9px;
+    }
+
+    #body-p-st {
+        font-size: 16px;
+    }
+
+    #p-head {
+        font-size: 14px;
+    }
+
+    body>#body-head>#p-body {
+        font-size: 12px;
+    }
+
+    #content-nocenter {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-employee {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-info{
+        margin: 0;
+        padding: 0;
+        font: 12px;
+    }
+    
+    #content-info-head {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+    }
+    
+    #content-info-inhead-tab {
+        margin-left: 20px;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    #content-employee-tab {
+        margin-left: 30px;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    #content-info > img{
+        float: none;
+    }
+}
+
+/* for medium screen */
+@media (max-width: 1023px) {
+
+    #header-p {
+        font-size: 12px;
+    }
+
+    #header-logo>a {
+        font-size: 1.8vmax;
+    }
+
+    #logo {
+        max-width: 70%;
+        max-height: 50%;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
+
+    .dropdown-menu {
+        width: 110px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        padding: 0 10px 0;
+    }
+
+    #footer-unibranch {
+        font-size: 14px;
+    }
+
+    #footer-uni {
+        font-size: 12px;
+    }
+
+    #footer-font-color-sp {
+        font-size: 12px;
+    }
+
+    #footer-copyright {
+        font-size: 9px;
+    }
+
+    #body-p-st {
+        font-size: 14px;
+    }
+
+    #p-head {
+        font-size: 14px;
+    }
+
+    body>#body-head>#p-body {
+        font-size: 12px;
+    }
+    
+    #content-nocenter {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-employee {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-info{
+        margin: 0;
+        padding: 0;
+        font: 12px;
+    }
+    
+    #content-info-head {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+    }
+    
+    #content-info-inhead-tab {
+        margin-left: 20px;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    #content-employee-tab {
+        margin-left: 30px;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    #content-info > img{
+        float: none;
+    }
+}
+
+/* for small screen */
+@media (max-width: 374px) {
+
+    #header-p {
+        font-size: 12px;
+    }
+
+    #header-logo>a {
+        font-size: 1.8vmax;
+    }
+
+    #logo {
+        max-width: 70%;
+        max-height: 50%;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
+
+    .dropdown-menu {
+        width: 110px;
+    }
+
+    #p-body {
+        font-size: 12px;
+    }
+
+    body>#body-head>#p-body {
+        font-size: 12px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        padding: 0 10px 0;
+    }
+
+    #footer-unibranch {
+        font-size: 14px;
+    }
+
+    #footer-uni {
+        font-size: 12px;
+    }
+
+    #footer-font-color-sp {
+        font-size: 12px;
+    }
+
+    #footer-copyright {
+        font-size: 9px;
+    }
+
+    
+    #content-nocenter {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-employee {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #content-info{
+        margin: 0;
+        padding: 0;
+        font: 12px;
+    }
+    
+    #content-info-head {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+    }
+    
+    #content-info-inhead-tab {
+        margin-left: 20px;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    #content-employee-tab {
+        margin-left: 30px;
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    #content-info > img{
+        float: none;
+    }
+}
